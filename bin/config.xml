@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config>
+
+<Database>		
+	<Id>patent</Id>
+	<User>keit</User>
+	<Password>eogksalsrnr</Password>
+	<ClassName>oracle.jdbc.driver.OracleDriver</ClassName>
+	<!-- Url>jdbc:mysql://192.168.0.31:3306/search?characterEncoding=UTF-8</Url -->
+	<Url>jdbc:oracle:thin:@ibricks.iptime.org:1521:ORCL</Url>
+</Database>
+
+<URLConnectionRetry wait="60000" retryCount="20"/>
+
+<Target id="test" kor="그룹코드 조회" insertTableName="TEST_TABLE" insertCommitCount="500" type="B">
+	<Static>
+		<URL encoding="euc-kr" timeout="5000"><![CDATA[file:///E:/bongtest/test.xml]]></URL>
+	</Static>
+	
+	<MappingField dbFieldName="COL1"><![CDATA[/KR_RegisterPatent/KR_Bibliographic/KR_PublishingORG/text()]]></MappingField>
+	<MappingField dbFieldName="COL2"><![CDATA[/KR_RegisterPatent/KR_Bibliographic/KR_DocumentType/text()]]></MappingField>
+	<MappingField dbFieldName="COL3"><![CDATA[/KR_RegisterPatent/PatentNewDOC/Abstract/Summary/P/text()]]></MappingField>
+	<MappingField dbFieldName="COL4"><![CDATA[/KR_RegisterPatent/KR_Bibliographic/KR_PriorArtdocuments/KR_Documentnumber/text()]]></MappingField>	
+
+
+
+<!-- 
+	<MappingField dbFieldName="GROUP_CODE"><![CDATA[/nodes/node[@nid='<NID>']/property[@pid='group_code']/text()]]></MappingField> 
+	<MappingField dbFieldName="PROGRAM_TITLE_SEARCH"><![CDATA[/nodes/node[@nid='<NID>']/property[@pid='program_title_search']/text()]]></MappingField> 
+	<MappingField dbFieldName="PROGRAM_TITLE"><![CDATA[/nodes/node[@nid='<NID>']/property[@pid='program_title']/text()]]></MappingField> 
+	<MappingField dbFieldName="MASTER_PROGRAM"><![CDATA[/nodes/node[@nid='<NID>']/property[@pid='master_program']/@value]]></MappingField> 
+	<MappingField dbFieldName="SEGMENT_YN"><![CDATA[/nodes/node[@nid='<NID>']/property[@pid='segment_yn']/text()]]></MappingField> 
+	<MappingField dbFieldName="PROGRAM_ALIAS_KR"><![CDATA[/nodes/node[@nid='<NID>']/property[@pid='program_alias_kr']/text()]]></MappingField> 
+	<MappingField dbFieldName="PROGRAM_ALIAS_EN"><![CDATA[/nodes/node[@nid='<NID>']/property[@pid='program_alias_en']/text()]]></MappingField> 
+	<MappingField dbFieldName="CREATED"><![CDATA[/nodes/node[@nid='<NID>']/property[@pid='created']/text()]]></MappingField> 
+	<MappingField dbFieldName="USE_YN"><![CDATA[/nodes/node[@nid='<NID>']/property[@pid='use_yn']/text()]]></MappingField>
+-->
+</Target>
+
+
+</Config>
