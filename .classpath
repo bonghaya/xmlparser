@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5"/>
+	<classpathentry kind="lib" path="lib/Altibase_3_5_9_91_20070321.jar"/>
+	<classpathentry kind="lib" path="lib/Altibase_MS949.jar"/>
+	<classpathentry kind="lib" path="lib/Altibase.jar"/>
+	<classpathentry kind="lib" path="lib/Altibase.zip"/>
+	<classpathentry kind="lib" path="lib/Altibase3.jar"/>
+	<classpathentry kind="lib" path="lib/Altibase4.jar"/>
+	<classpathentry kind="lib" path="lib/classes12_10g.zip"/>
+	<classpathentry kind="lib" path="lib/classes12_8i.zip"/>
+	<classpathentry kind="lib" path="lib/classes12_9i.zip"/>
+	<classpathentry kind="lib" path="lib/db2java.jar"/>
+	<classpathentry kind="lib" path="lib/db2jcc_license_cu.jar"/>
+	<classpathentry kind="lib" path="lib/db2jcc.jar"/>
+	<classpathentry kind="lib" path="lib/derbyclient.jar"/>
+	<classpathentry kind="lib" path="lib/ifxjdbc.jar"/>
+	<classpathentry kind="lib" path="lib/jconnect45.jar"/>
+	<classpathentry kind="lib" path="lib/jconnect55.jar"/>
+	<classpathentry kind="lib" path="lib/jt400.jar"/>
+	<classpathentry kind="lib" path="lib/jtds-1.2.5.jar"/>
+	<classpathentry kind="lib" path="lib/mysql.jar"/>
+	<classpathentry kind="lib" path="lib/ojdbc14.jar"/>
+	<classpathentry kind="lib" path="lib/oracle.jar"/>
+	<classpathentry kind="lib" path="lib/postgresql.jar"/>
+	<classpathentry kind="lib" path="lib/sqljdbc.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
